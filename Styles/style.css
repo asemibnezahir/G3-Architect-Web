@@ -186,7 +186,33 @@ main>section{
 /* Teams Section Ends */
 
 
-
+/* Enjoy Features Section Starts */
+.enjoy-content{
+    max-width: 590px;
+}
+.enjoy-container{
+    justify-content: space-between;
+}
+#enjoy-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 10px;
+    max-width: 470px;
+}
+.enjoy-desc{
+    margin:2rem 0;
+}
+.enjoy-card{
+    padding: 2.5rem;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.6);
+}
+.enjoy-card-title{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.55rem;
+}
+/* Enjoy Features Section Ends */
 
 /* Some Facts Section Starts */
 .fact-title{
