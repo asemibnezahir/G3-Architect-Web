@@ -172,6 +172,7 @@ main>section{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 0.5rem;
+    margin: 0 2rem;
 }
 .our-features{
     max-width: 530px;
@@ -188,15 +189,17 @@ main>section{
 
 
 /* Some Facts Section Starts */
+.fact-title{
+    margin: 0 2rem;
+}
 .fact-desc{
     max-width: 540px;
-    margin: 2rem 0;
+    margin: 2rem 2rem;
 }
 
 .fact-container{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    margin: 0 150px;
 }
 .fact-card{
     padding: 2rem;
@@ -204,6 +207,7 @@ main>section{
     border-radius: 8px;
     width: 240px;
     height: 240px;
+    margin: 0 auto;
 }
 .fact-icon{
     display: flex;
@@ -231,6 +235,26 @@ main>section{
 
 
 /* Sponsors Section Starts */
+.sponsor-text{
+    text-align: center;
+    max-width: 540px;
+    margin: 0 auto;
+    h1,p{
+        padding-bottom: 2rem;
+    }
+}
+.sponsor-container{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 30px;
+}
+.sponsor-info{
+    margin: 0 auto;
+}
+.sponsor-container img{
+    filter: grayscale(100%);
+}
 
 /* Sponsors Section Ends */
 
@@ -249,25 +273,26 @@ main>section{
 
 /* Responsive Media Query For Mobile */
 @media screen and (max-width:576px) {
-    .navbar,.nav-links>ul,.teams{
-        flex-direction: column-reverse;
+    .navbar,.nav-links>ul{
+        flex-direction: column;
     }
     .nav-links{
         margin-top: 2rem;
         text-align: center;
     }
-    .team-img-container,.fact-container{
+    .teams{
+        flex-direction: column-reverse;
+    }
+    .team-img-container,.fact-container,.sponsor-container{
         grid-template-columns: repeat(1,1fr);
     }
-    .our-features{
-        text-align: center;
-    }
-    .some-fact{
+    .our-features,.some-fact,.sponsor-container{
         text-align: center;
     }
     .fact-container{
         gap:20px;
     }
+    
 }
 
 
@@ -282,5 +307,14 @@ main>section{
     .fact-container{
         grid-template-columns: repeat(2,1fr);
         gap:20px;
+    }
+    .sponsor-container{
+        grid-template-columns: repeat(6,1fr);
+    }
+    .sponsor-info:nth-child(1),.sponsor-info:nth-child(2),.sponsor-info:nth-child(3){
+        grid-column: span 2;
+    }
+    .sponsor-info:nth-child(4),.sponsor-info:nth-child(5){
+        grid-column: span 3;
     }
 }
