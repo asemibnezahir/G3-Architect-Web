@@ -1,6 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 /* Font Family of Work Sans */
 .work-sans-font {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+}
+
+/* Common Styles */
+.flexible{
+    display: flex;
+}
+
+.high-dark{
+    color: #131313;
+}
+
+.mid-dark{
+    color: #424242;
+}
+
+.low-dark{
+    color: #727272;
+}
+.bg-light{
+background-color: rgba(255, 144, 14, 0.1);
+}
+desc{
+    font-size: 1rem;
+    font-weight: normal;
+    color: #727272;
+}
+.prime-btn{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    padding: 1rem 1.3rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #FF900E;
+}
+
+
+
+
+
+
+.header{
+    width: 100%;
+}
+.navbar, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+/* Navbar Style Starts */
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-head{
+    font-size: 2.8rem;
+}
+.nav-links>ul{
+    font-size: 1.1rem;
+    gap: 1rem;
+}
+.nav-list{
+    margin: 0px 15px;
+    list-style: none;
+}
+.link{
+    text-decoration: none;
+}
+/* Navbar Style Ends */
+
+/* Banner Style Starts */
+.banner{
+    text-align: center;
+}
+.image{
+   width: 100%;
+
+}
+.banner-title{
+    font-size: 4rem;
+    padding-bottom: 0.4rem;
+}
+.banner-desc{
+    padding-bottom: 2rem;
+    max-width: 55%;
+    margin: 0 auto;
+}
+.banner>button{
+    margin-bottom: 3rem;
+}
+.image img{
+    width: 100%;
+}
+/* Banner Style Ends */
+
+/* Responsive Media Query */
+@media screen and (max-width:576px) {
+    .navbar,.nav-links>ul{
+        flex-direction: column;
+    }
+    .nav-links{
+        margin-top: 2rem;
+        text-align: center;
+    }
 }
