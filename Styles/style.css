@@ -75,6 +75,18 @@ desc{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* Header Part Starts */
 
 .header{
@@ -151,6 +163,28 @@ desc{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Main Part Starts */
 main{
     max-width: 1440px;
@@ -159,6 +193,7 @@ main{
 main>section{
     margin-top: 5rem;
 }
+
 
 
 
@@ -184,6 +219,14 @@ main>section{
     margin: 2rem 0;
 }
 /* Teams Section Ends */
+
+
+
+
+
+
+
+
 
 
 /* Enjoy Features Section Starts */
@@ -233,6 +276,13 @@ main>section{
 
 
 
+
+
+
+
+
+
+
 /* Some Facts Section Starts */
 .fact-title{
     margin: 0 2rem;
@@ -279,6 +329,9 @@ main>section{
 
 
 
+
+
+
 /* Sponsors Section Starts */
 .sponsor-text{
     text-align: center;
@@ -304,6 +357,77 @@ main>section{
 /* Sponsors Section Ends */
 
 /* Main Part Ends */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer Part Starts */
+.footer{
+    margin: 8rem 15rem;
+    background-color: #FFF4E7;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+/* Footer Part Ends */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -346,6 +470,9 @@ main>section{
     .enjoy-container{
         margin: 30px;
     }
+    .footer{
+        margin: 2rem 3rem;
+    }
 }
 
 
@@ -381,5 +508,8 @@ main>section{
     }
     .enjoy-content{
         margin-right: 20px;
+    }
+     .footer{
+        margin: 4rem 6rem;
     }
 }
