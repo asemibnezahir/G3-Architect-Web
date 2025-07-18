@@ -212,7 +212,26 @@ main>section{
     font-weight: 600;
     margin-bottom: 0.55rem;
 }
+.enjoy-img img{
+    display: block;
+    width: 100%;
+}
+#exp-badge{
+    padding: 2.6rem;
+    margin-left: -85px;
+    margin-top: -120px;
+}
+#exp-year{
+    font-size: 4rem;
+    font-weight: 800;
+}
+#exp{
+    font-size:1.56rem;
+    font-weight: 500;
+}
 /* Enjoy Features Section Ends */
+
+
 
 /* Some Facts Section Starts */
 .fact-title{
@@ -306,7 +325,7 @@ main>section{
         margin-top: 2rem;
         text-align: center;
     }
-    .teams{
+    .teams,.enjoy-container{
         flex-direction: column-reverse;
     }
     .team-img-container,.fact-container,.sponsor-container{
@@ -318,7 +337,15 @@ main>section{
     .fact-container{
         gap:20px;
     }
-    
+    #exp-badge{
+    padding: 2rem;
+    max-width: 350px;
+    display: block;
+    margin: 0px auto 50px;
+    }
+    .enjoy-container{
+        margin: 30px;
+    }
 }
 
 
@@ -342,5 +369,17 @@ main>section{
     }
     .sponsor-info:nth-child(4),.sponsor-info:nth-child(5){
         grid-column: span 3;
+    }
+     #exp-badge{
+    padding: 1rem;
+    max-width: 350px;
+    display: block;
+    margin: 0px auto 50px;
+    }
+    .enjoy-container{
+        margin: 30px;
+    }
+    .enjoy-content{
+        margin-right: 20px;
     }
 }
