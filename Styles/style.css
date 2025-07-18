@@ -4,13 +4,17 @@
     box-sizing: border-box;
 }
 
-
 /* Font Family of Work Sans */
 .work-sans-font {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
+
+
+
+
+
 
 /* Common Styles */
 .flexible{
@@ -46,6 +50,27 @@ desc{
     border-radius: 0.5rem;
     background-color: #FF900E;
 }
+.sec-title{
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -112,6 +137,20 @@ desc{
 /* Header Part Ends */
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Main Part Starts */
 main{
     max-width: 1440px;
@@ -120,6 +159,10 @@ main{
 main>section{
     margin-top: 5rem;
 }
+
+
+
+
 /* Teams Section Starts */
 .teams{
     gap: 7rem;
@@ -142,7 +185,66 @@ main>section{
 /* Teams Section Ends */
 
 
+
+
+/* Some Facts Section Starts */
+.fact-desc{
+    max-width: 540px;
+    margin: 2rem 0;
+}
+
+.fact-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 0 150px;
+}
+.fact-card{
+    padding: 2rem;
+    border: 1.5px solid rgba(255, 144, 14, 1);
+    border-radius: 8px;
+    width: 240px;
+    height: 240px;
+}
+.fact-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.fact-num{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 10px 0px 5px;
+}
+.fact-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+/* Some Facts Section Ends */
+
+
+
+/* Sponsors Section Starts */
+
+/* Sponsors Section Ends */
+
 /* Main Part Ends */
+
+
+
+
+
+
+
+
+
+
 
 
 /* Responsive Media Query For Mobile */
@@ -154,11 +256,17 @@ main>section{
         margin-top: 2rem;
         text-align: center;
     }
-    .team-img-container{
+    .team-img-container,.fact-container{
         grid-template-columns: repeat(1,1fr);
     }
     .our-features{
         text-align: center;
+    }
+    .some-fact{
+        text-align: center;
+    }
+    .fact-container{
+        gap:20px;
     }
 }
 
@@ -170,5 +278,9 @@ main>section{
     }
     .our-features{
         text-align: center;
+    }
+    .fact-container{
+        grid-template-columns: repeat(2,1fr);
+        gap:20px;
     }
 }
